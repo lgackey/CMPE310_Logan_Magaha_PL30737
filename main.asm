@@ -14,7 +14,7 @@ section .bss
     dist resd 100
 
 section	.text
-   global _start        
+   global _start  
 	
 _start:
 
@@ -129,6 +129,7 @@ _start:
     mov edx, 1
     int 0x80
 
+.exit:
     ; goodbye!
     mov eax, 1
     xor ebx, ebx
